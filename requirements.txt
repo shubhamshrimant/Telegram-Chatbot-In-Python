@@ -2,4 +2,4 @@ nltk==3.5
 pandas==1.0.5
 numpy==1.18.5
 requests==2.24.0
-json
+json5==0.9.5
