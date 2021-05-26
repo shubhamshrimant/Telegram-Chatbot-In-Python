@@ -4,7 +4,7 @@ Created on Wed May 26 13:18:10 2021
 
 @author: shubh
 """
-import ss2
+import chatbot
 import requests
 import json
 
