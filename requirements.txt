@@ -3,3 +3,4 @@ pandas==1.0.5
 numpy==1.18.5
 requests==2.24.0
 json5==0.9.5
+flask==1.1.2
