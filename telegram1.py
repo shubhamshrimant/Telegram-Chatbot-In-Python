@@ -5,11 +5,13 @@ Created on Thu May 27 13:10:13 2021
 
 @author: shubh
 """
+import os
 from flask import Flask, request
 import telegram,re
 global bot
 global TOKEN
 import chatbot
+
 
 bot_token = "1885790205:AAHO4QELFu-ABa4CsJkcyU1B8k0clKy0Qc4"
 bot_user_name = "Co_Helper_Bot"
@@ -65,4 +67,5 @@ def index():
 
 
 if __name__ == '__main__':
+   port = int(os.environ.get("PORT", 8008))
    app.run(threaded=True)
