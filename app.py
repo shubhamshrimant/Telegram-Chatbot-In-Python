@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    file = open(r'telegram.py', 'r').read()
+    file = open(r'telegram1.py', 'r').read()
     return exec(file)
 
 if __name__ == '__main__':
