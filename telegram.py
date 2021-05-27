@@ -46,7 +46,7 @@ def respond():
 
 
    else:
-       answer=ss2.chatbot(text)
+       answer=chatbot.chatbot(text)
        bot.sendMessage(chat_id=chat_id, text=answer, reply_to_message_id=msg_id)
 
    return 'ok'
