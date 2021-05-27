@@ -31,7 +31,7 @@ def bot_initialize(user_msg):
                 return bot_resp
             else:
                 user_response = user_response.lower()
-                bot_resp = ss2.chatbot(user_response)
+                bot_resp = chatbot.chatbot(user_response)
                 #sent_tokens.remove(user_response)   # remove user question from sent_token that we added in sent_token in response() to find the Tf-Idf and cosine_similarity
                 return bot_resp
         else:
