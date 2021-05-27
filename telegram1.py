@@ -14,6 +14,7 @@ Created on Wed May 26 13:18:10 2021
 import chatbot
 import requests
 import json
+import time
 
 
 import random
@@ -90,5 +91,8 @@ while True:
             print(from_)
         reply = make_reply(message)
         tbot.send_message(reply,from_)
+        
+    else:
+        time.sleep(60)
 
 #updates.pop()
