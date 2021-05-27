@@ -13,7 +13,7 @@ global TOKEN
 import chatbot
 
 
-bot_token = "1885790205:AAHO4QELFu-ABa4CsJkcyU1B8k0clKy0Qc4"
+bot_token = "1885790205:##########-###4CsJkcyU1B8k0clKy0Qc4"
 bot_user_name = "Co_Helper_Bot"
 URL = "https://telegramchatbot109.herokuapp.com/"
 TOKEN = bot_token
