@@ -46,10 +46,12 @@ def respond():
        # send the welcoming message
        bot.sendMessage(chat_id=chat_id, text=bot_welcome, reply_to_message_id=msg_id)
 
-
    else:
-       answer=chatbot.chatbot(text)
-       bot.sendMessage(chat_id=chat_id, text=answer, reply_to_message_id=msg_id)
+      try:
+         answer=chatbot.chatbot(text)
+         bot.sendMessage(chat_id=chat_id, text=answer, reply_to_message_id=msg_id)
+      except:
+         bot.sendMessage(chat_id=chat_id, text="There was some error", reply_to_message_id=msg_id)
 
    return 'ok'
 
