@@ -6,3 +6,5 @@ json5==0.9.5
 flask==1.1.2
 gunicorn==19.9.0
 scikit-learn==0.23.1
+python-telegram-bot==13.5
+requests==2.24.0
