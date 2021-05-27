@@ -1,6 +1,7 @@
 #from os import environ
 from flask import Flask,request
 import chatbot,telegram
+import requests
 app = Flask(__name__)
 #app.run(environ.get('PORT'))
 
