@@ -60,6 +60,7 @@ def set_webhook():
        return "webhook setup ok"
    else:
        return "webhook setup failed"
+   return "ok"
 
 @app.route('/')
 def index():
