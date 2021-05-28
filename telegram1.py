@@ -40,7 +40,7 @@ def bot_initialize(user_msg):
             else:
                 user_response = user_response.lower()
                 bot_resp = chatbot.chatbot(user_response)
-                #sent_tokens.remove(user_response)   # remove user question from sent_token that we added in sent_token in response() to find the Tf-Idf and cosine_similarity
+      
                 return bot_resp
         else:
             flag = False
@@ -48,7 +48,7 @@ def bot_initialize(user_msg):
             return bot_resp
 class telegram_bot():
     def __init__(self):
-        self.token = "1827438721:AAENDisATfkdVxDGu-TNN7c2-dSf-L5vAfQ"    #write your token here!
+        self.token = "1827438721:AAENDisATfkdVxDGu-TNN7c2-dSf-L5vAfQ"    #write your token here! This won't work as I have revoked it.
         self.url = f"https://api.telegram.org/bot{self.token}"
     def get_updates(self,offset=None):
             url = self.url+"/getUpdates?timeout=100"    # In 100 seconds if user input query then process that, use it as the read timeout from the server
